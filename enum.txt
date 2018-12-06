@@ -1,0 +1,69 @@
+import UIKit
+
+enum WeekOfDays {
+    case sunday
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+}
+
+var days = WeekOfDays.friday
+days = .monday
+
+switch days {
+    case .sunday:
+        print("Its Sunday")
+    case .monday:
+        print("Its monday")
+    case .tuesday:
+        print("Its tuesday")
+    case .wednesday:
+        print("Its wednesday")
+    case .thursday:
+        print("Its thursday")
+    case .friday:
+        print("Its friday")
+    case .saturday:
+        print("Its saturday")
+    
+}
+
+enum Student : String {
+    case name = "Sandeep"
+    case age  = "24"
+
+}
+
+var stud = Student.name
+
+switch stud {
+    case .name :
+        print("Student name ")
+    case .age :
+        print("age")
+}
+
+
+enum Student1 {
+    case name(String)
+    case mark(Int,Int,Int)
+    
+    func descriptin() -> String {
+        
+    }
+
+}
+
+let stude = Student1.name("Sandeep")
+let studee = Student1.mark(57,99, 98)
+
+switch studee {
+case .name:
+    print(stude)
+case .mark:
+    print(studee)
+}
+
