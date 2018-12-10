@@ -1,0 +1,44 @@
+import Foundation
+import UIKit
+
+// MARK:- Diffrence Between  class and struture
+
+//TODO:- Class Example
+
+class Student {
+    
+    var name: String
+    
+    init(name: String){
+        self.name = name
+    }
+    
+}
+
+let student1 = Student(name: "Ayush")
+var student2 = student1
+student2.name = "Sandeep"
+
+print("Student1 name is \(student1.name)")
+print("Student2 name is \(student2.name)")
+
+// TODO:- Sturture Example
+
+struct Teacher {
+    
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+}
+
+let teacher1 = Teacher(name: "girijesh")
+var teacher2 = teacher1
+teacher2.name = "Ranjeet"
+
+print("Teacher1 name is \(teacher1.name)")
+print("Teacher2 name is \(teacher2.name)")
+
+
