@@ -1,0 +1,17 @@
+import Foundation
+import PlaygroundSupport
+
+let session = URLSession(configuration: .ephemeral)
+
+
+let task = session.dataTask(with: URL(string: "http://18.224.4.90:3001")!)
+task.currentRequest?.url
+task.currentRequest?.description
+task.currentRequest?.allowsCellularAccess
+task.currentRequest?.httpMethod
+task.currentRequest?.allHTTPHeaderFields
+task.currentRequest?.cachePolicy
+task.currentRequest?.httpShouldHandleCookies
+task.currentRequest?.networkServiceType
+task.currentRequest
+task.currentRequest?.timeoutInterval
