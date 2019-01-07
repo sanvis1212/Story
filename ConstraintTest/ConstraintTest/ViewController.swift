@@ -7,18 +7,50 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpView()
-
+        self.dataRecieveFromServer()
+        
     }
     
-    private func setUpView(){
-   
+    fileprivate func dataRecieveFromServer(){
+        
+        let url = "https://api.letsbuildthatapp.com/jsondecodable/course"
+        guard let urlString = URL(string: url) else {
+            print("Url not found ")
+            return
+        }
+        var requeset = URLRequest(url: urlString)
+        requeset.httpMethod = "GET"
+    
+        
+         URLSession.shared.dataTask(with: requeset) { (data, response, error) in
+            guard error == nil else {
+                print("Din't get response")
+                return
+            }
+            guard let responseData = data else {
+                print("Data not found")
+                return
+            }
+            
+            do {
+                let objectData = try JSONSerialization.jsonObject(with: responseData, options: [])
+                
+                print(objectData)
+            } catch {
+                print("error found")
+            }
+            
+        }.resume()
+        
     }
-
-
+    
 }
+
+
+

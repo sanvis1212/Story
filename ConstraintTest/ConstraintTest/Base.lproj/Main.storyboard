@@ -14,56 +14,23 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConstraintTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gZ8-rj-R5J">
+                    <view key="view" contentMode="scaleAspectFit" id="gZ8-rj-R5J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaU-7C-ksR" customClass="CustomChange" customModule="ConstraintTest" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="69" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="grh-9Q-lUC"/>
-                                    <constraint firstAttribute="width" constant="150" id="up3-xA-oPo"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="55"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-L7-j7b">
-                                <rect key="frame" x="112.5" y="258" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="2jc-Wo-tzy"/>
-                                    <constraint firstAttribute="width" constant="150" id="o5A-wD-h3l"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="45"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnl-pb-MPa" customClass="CustomChange" customModule="ConstraintTest" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="439" width="150" height="150"/>
-                                <color key="backgroundColor" red="1" green="0.24983142689999999" blue="0.3711083423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="JTV-r3-m75"/>
-                                    <constraint firstAttribute="width" constant="150" id="WCG-Uc-6LH"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sandeeep kumar vishwakarma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txh-1W-nmc">
+                                <rect key="frame" x="72" y="203" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OaU-7C-ksR" firstAttribute="top" secondItem="4iP-9a-GRI" secondAttribute="top" constant="49" id="29A-il-SsI"/>
-                            <constraint firstItem="1iN-L7-j7b" firstAttribute="centerX" secondItem="gZ8-rj-R5J" secondAttribute="centerX" id="Ene-aA-B4r"/>
-                            <constraint firstItem="Lnl-pb-MPa" firstAttribute="centerX" secondItem="gZ8-rj-R5J" secondAttribute="centerX" id="Qw4-os-dBZ"/>
-                            <constraint firstItem="OaU-7C-ksR" firstAttribute="centerX" secondItem="gZ8-rj-R5J" secondAttribute="centerX" id="awM-cT-xkJ"/>
-                            <constraint firstItem="1iN-L7-j7b" firstAttribute="top" secondItem="OaU-7C-ksR" secondAttribute="bottom" constant="39" id="h1L-6X-HSP"/>
-                            <constraint firstItem="Lnl-pb-MPa" firstAttribute="top" secondItem="1iN-L7-j7b" secondAttribute="bottom" constant="31" id="uGl-Ih-yrd"/>
+                            <constraint firstItem="txh-1W-nmc" firstAttribute="top" secondItem="4iP-9a-GRI" secondAttribute="top" constant="183" id="Lfc-nx-bTw"/>
+                            <constraint firstItem="4iP-9a-GRI" firstAttribute="bottom" secondItem="txh-1W-nmc" secondAttribute="bottom" constant="443" id="Wpo-xF-mlf"/>
+                            <constraint firstItem="txh-1W-nmc" firstAttribute="leading" secondItem="4iP-9a-GRI" secondAttribute="leading" constant="72" id="jAN-36-f3P"/>
+                            <constraint firstItem="4iP-9a-GRI" firstAttribute="trailing" secondItem="txh-1W-nmc" secondAttribute="trailing" constant="72" id="tWt-gM-Opx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4iP-9a-GRI"/>
                     </view>
