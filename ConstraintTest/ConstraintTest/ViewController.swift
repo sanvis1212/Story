@@ -8,6 +8,9 @@
 
 import UIKit
 import Foundation
+import Alamofire
+import AlamofireImage
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -21,10 +24,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.dataRecieveFromServer()
-        self.dataReciveUseingCodable()
+//        self.dataReciveUseingCodable()
         
     }
     
+    fileprivate func uploadImage(){
+        
+        
+    }
     
     fileprivate func dataReciveUseingCodable(){
       let urlStirng = "https://api.letsbuildthatapp.com/jsondecodable/course"
@@ -53,51 +60,38 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-//    fileprivate func dataRecieveFromServer(){
-//
-//        let url = "https://api.letsbuildthatapp.com/jsondecodable/course"
-//        guard let urlString = URL(string: url) else {
-//            print("Url not found ")
-//            return
-//        }
-//        var requeset = URLRequest(url: urlString)
-//        requeset.httpMethod = "GET"
-//
-//
-//         URLSession.shared.dataTask(with: requeset) { (data, response, error) in
-//            guard error == nil else {
-//                print("Din't get response")
-//                return
-//            }
-//            guard let responseData = data else {
-//                print("Data not found")
-//                return
-//            }
-//
-//            do {
-//                let objectData = try JSONSerialization.jsonObject(with: responseData, options: [])
-//
-//                print(objectData)
-//            } catch {
-//                print("error found")
-//            }
-//
-//        }.resume()
-//
-//    }
+    fileprivate func dataRecieveFromServer(){
+
+        let url = "https://api.letsbuildthatapp.com/jsondecodable/course"
+        guard let urlString = URL(string: url) else {
+            print("Url not found ")
+            return
+        }
+        var requeset = URLRequest(url: urlString)
+        requeset.httpMethod = "GET"
+
+
+         URLSession.shared.dataTask(with: requeset) { (data, response, error) in
+            guard error == nil else {
+                print("Din't get response")
+                return
+            }
+            guard let responseData = data else {
+                print("Data not found")
+                return
+            }
+
+            do {
+                let objectData = try JSONSerialization.jsonObject(with: responseData, options: [])
+
+                print(objectData)
+            } catch {
+                print("error found")
+            }
+
+        }.resume()
+
+    }
     
 }
 

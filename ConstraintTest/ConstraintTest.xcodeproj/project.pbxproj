@@ -13,9 +13,12 @@
 		68FB72C821ABB70E0059A3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FB72C621ABB70E0059A3A5 /* Main.storyboard */; };
 		68FB72CA21ABB70F0059A3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FB72C921ABB70F0059A3A5 /* Assets.xcassets */; };
 		68FB72CD21ABB70F0059A3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FB72CB21ABB70F0059A3A5 /* LaunchScreen.storyboard */; };
+		A11DEE85EBEC1AF66309542C /* Pods_ConstraintTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009B7D99BA61A3F463831288 /* Pods_ConstraintTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009B7D99BA61A3F463831288 /* Pods_ConstraintTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConstraintTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C88D1BD6A17D7D37F2CB27 /* Pods-ConstraintTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConstraintTest/Pods-ConstraintTest.release.xcconfig"; sourceTree = "<group>"; };
 		68541B5721B6486F007C1E20 /* CustomDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDesign.swift; sourceTree = "<group>"; };
 		68FB72BF21ABB70E0059A3A5 /* ConstraintTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FB72C221ABB70E0059A3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		68FB72C921ABB70F0059A3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68FB72CC21ABB70F0059A3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68FB72CE21ABB70F0059A3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3971F6461214970B498061 /* Pods-ConstraintTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConstraintTest/Pods-ConstraintTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11DEE85EBEC1AF66309542C /* Pods_ConstraintTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				68FB72C121ABB70E0059A3A5 /* ConstraintTest */,
 				68FB72C021ABB70E0059A3A5 /* Products */,
+				B8E3880051D6A235C446CCB8 /* Pods */,
+				88691133E16B3DDEA16C769D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = ConstraintTest;
 			sourceTree = "<group>";
 		};
+		88691133E16B3DDEA16C769D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				009B7D99BA61A3F463831288 /* Pods_ConstraintTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8E3880051D6A235C446CCB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D3971F6461214970B498061 /* Pods-ConstraintTest.debug.xcconfig */,
+				05C88D1BD6A17D7D37F2CB27 /* Pods-ConstraintTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68FB72D121ABB70F0059A3A5 /* Build configuration list for PBXNativeTarget "ConstraintTest" */;
 			buildPhases = (
+				FE4DEB653AB5BA5CA7998A6E /* [CP] Check Pods Manifest.lock */,
 				68FB72BB21ABB70E0059A3A5 /* Sources */,
 				68FB72BC21ABB70E0059A3A5 /* Frameworks */,
 				68FB72BD21ABB70E0059A3A5 /* Resources */,
+				8EC830DE50C9F9EFDD097C4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EC830DE50C9F9EFDD097C4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ConstraintTest/Pods-ConstraintTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConstraintTest/Pods-ConstraintTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE4DEB653AB5BA5CA7998A6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConstraintTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68FB72BB21ABB70E0059A3A5 /* Sources */ = {
@@ -284,6 +361,7 @@
 		};
 		68FB72D221ABB70F0059A3A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3971F6461214970B498061 /* Pods-ConstraintTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +379,7 @@
 		};
 		68FB72D321ABB70F0059A3A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C88D1BD6A17D7D37F2CB27 /* Pods-ConstraintTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
